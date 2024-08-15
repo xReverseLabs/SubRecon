@@ -5,6 +5,8 @@ A high-performance subdomain scanner written in Go, utilizing the [xReverseLabs 
 
 ## Features
 
+![SubRecon](https://raw.githubusercontent.com/xReverseLabs/SubRecon/main/Subrecon.png)
+
 - **Fast and Efficient:** Leverages the `fasthttp` library for high-performance HTTP requests.
 - **Concurrent Scanning:** Supports multi-threaded scanning to process multiple domains simultaneously.
 - **Customizable Output:** Outputs the results to a specified file.
@@ -58,7 +60,11 @@ Replace `"YOUR_API_KEY_HERE"` with your actual API key obtained from [xReverseLa
 #### Scanning a Single Domain
 
 ```bash
+Linux :
 go run main.go -d example.com -o output.txt
+
+Windows :
+SubRecon-x64.exe -d example.com -o output.txt
 ```
 
 This will scan `example.com` for subdomains and save the results in `output.txt`.
@@ -66,7 +72,11 @@ This will scan `example.com` for subdomains and save the results in `output.txt`
 #### Scanning Multiple Domains from a File
 
 ```bash
+Linux :
 go run main.go -f domains.txt -t 10 -o output.txt
+
+Windows :
+SubRecon-x64.exe -f domains.txt -t 10 -o output.txt
 ```
 
 This will scan all domains listed in `domains.txt` with `10` concurrent threads and save the results in `output.txt`.
@@ -74,7 +84,11 @@ This will scan all domains listed in `domains.txt` with `10` concurrent threads 
 #### Displaying Help
 
 ```bash
+Linux :
 go run main.go --help
+
+Windows :
+SubRecon-x64.exe --help
 ```
 
 This will display a help message with information on how to use the tool.
@@ -109,6 +123,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [fasthttp](https://github.com/valyala/fasthttp) for the high-performance HTTP library.
 - [xReverseLabs](https://api.xreverselabs.my.id) for providing the subdomain API.
 - [aurora](https://github.com/logrusorgru/aurora) for the beautiful terminal output colors.
+- [Yon3zu](https://github.com/yon3zu) Developer
 
 ---
 
