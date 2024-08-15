@@ -121,7 +121,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgments
 
 - [fasthttp](https://github.com/valyala/fasthttp) for the high-performance HTTP library.
-- [xReverseLabs](https://api.xreverselabs.my.id) for providing the subdomain API.
 - [aurora](https://github.com/logrusorgru/aurora) for the beautiful terminal output colors.
 - [Yon3zu](https://github.com/yon3zu) Developer
 
